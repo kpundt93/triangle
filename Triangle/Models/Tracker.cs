@@ -16,7 +16,7 @@ namespace Triangle
 
     public bool IsScalene(int side1, int side2, int side3)
     {
-      if(IsTriangle(side1, side2, side3))
+      if (IsTriangle(side1, side2, side3))
       {
         if ((side1 != side2) && ((side1 != side3)) && ((side2 != side3)))
         {
@@ -50,6 +50,26 @@ namespace Triangle
       {
         return false;
       }
+    }
+
+    public bool IsIsosceles(int side1, int side2, int side3)
+    {
+      // if (IsTriangle(side1, side2, side3))
+      // {
+      //   if (!IsEquilateral(side1, side2, side3) && !IsScalene(side1, side2, side3))
+      //   {
+      //     return true;
+      //   }
+      //   else
+      //   {
+      //     return false;
+      //   }
+      // }
+      // else
+      // {
+      //   return false;
+      // }
+      return false;
     }
   }
 }
