@@ -19,5 +19,12 @@ namespace Triangle.Tests
       Tracker triangle2 = new Tracker();
       Assert.AreEqual(true, triangle2.IsScalene(1, 2, 3));
     }
+
+    [TestMethod]
+    public void IsTriangle_CheckIfEquilateral_True()
+    {
+      Tracker triangle3 = new Tracker();
+      Assert.AreEqual(true, triangle3.IsEquilateral(2, 2, 2));
+    }
   }
 }
