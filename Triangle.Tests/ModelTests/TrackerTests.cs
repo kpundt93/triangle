@@ -12,5 +12,12 @@ namespace Triangle.Tests
       Tracker triangle1 = new Tracker();
       Assert.AreEqual(true, triangle1.IsTriangle(1, 2, 1));
     }
+
+    [TestMethod]
+    public void IsTriangle_CheckIfScalene_True()
+    {
+      Tracker triangle2 = new Tracker();
+      Assert.AreEqual(true, triangle2.IsScalene(1, 2, 3));
+    }
   }
 }
